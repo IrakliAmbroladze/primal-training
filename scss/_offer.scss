@@ -1,0 +1,25 @@
+.offer-section {
+  @include dFlex($flexDirection: column);
+  background-color: $Background_2;
+
+  img {
+    object-fit: fill;
+    width: 100%;
+  }
+
+  .offer-content {
+    @extend %content_base;
+
+    border-bottom: 1px solid $mainColor;
+
+    a {
+      color: $mainColor;
+      @include UPPERCASE();
+      font-weight: 700;
+      line-height: 41px;
+      margin: 0 17px;
+    }
+  }
+
+
+}

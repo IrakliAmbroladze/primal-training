@@ -25,3 +25,21 @@ body {
   text-transform: uppercase;
 
 }
+
+//extends
+%content_base {
+  padding-top: 20px;
+  padding-bottom: 20px;
+
+  h2 {
+    font-weight: 700;
+    font-size: 25px;
+    margin-bottom: 6px;
+    @include UPPERCASE();
+  }
+
+  p {
+    line-height: 20px;
+  }
+
+}
