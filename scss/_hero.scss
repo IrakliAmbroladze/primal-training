@@ -1,6 +1,10 @@
 main {
   .hero-header {
     text-transform: uppercase;
+    font-size: 30px;
+    font-weight: 700;
+    margin-top: 20px;
+    margin-bottom: 20px;
 
     span {
       color: $headLine_2;
