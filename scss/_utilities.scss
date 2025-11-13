@@ -39,8 +39,9 @@ body {
 }
 
 .section {
-  @include dFlex($flexDirection: column);
+  @include dFlex($flexDirection: column, $alignItems: start);
   background-color: $Background_2;
+  width: 100%;
 
   img {
     object-fit: fill;
@@ -49,6 +50,8 @@ body {
 
   .content {
     @extend %content_base;
+    width: 100%;
+    border-bottom: 1px solid $mainColor;
 
     a {
       color: $mainColor;
