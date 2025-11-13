@@ -21,3 +21,14 @@ footer {
 
   }
 }
+
+@media (min-width: 768px) {
+  footer {
+    .container {
+      min-height: 120px;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+    }
+  }
+}
