@@ -13,6 +13,7 @@ main {
 
   .hero-section {
     @include dFlex($flexDirection: column);
+    background-color: $Background_2;
 
     img {
       object-fit: fill;
