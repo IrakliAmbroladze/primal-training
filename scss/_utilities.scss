@@ -20,3 +20,8 @@ body {
   justify-content: $justifyContent;
   align-items: $alignItems;
 }
+
+@mixin UPPERCASE() {
+  text-transform: uppercase;
+
+}
