@@ -1,5 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400..700;1,400..700&display=swap');
 
+//mixins
+@mixin dFlex($flexDirection: row, $justifyContent: space-between, $alignItems: center) {
+  display: flex;
+  flex-direction: $flexDirection;
+  justify-content: $justifyContent;
+  align-items: $alignItems;
+}
+
+@mixin UPPERCASE() {
+  text-transform: uppercase;
+
+}
+
 body {
   font-family: "Instrument Sans", sans-serif;
   font-optical-sizing: auto;
@@ -13,18 +26,49 @@ body {
   margin-right: 20px;
 }
 
-//mixins
-@mixin dFlex($flexDirection: row, $justifyContent: space-between, $alignItems: center) {
-  display: flex;
-  flex-direction: $flexDirection;
-  justify-content: $justifyContent;
-  align-items: $alignItems;
+.header {
+  @include UPPERCASE();
+  font-size: 30px;
+  font-weight: 700;
+  margin-top: 20px;
+  margin-bottom: 20px;
+
+  span {
+    color: $headLine_2;
+  }
 }
 
-@mixin UPPERCASE() {
-  text-transform: uppercase;
+.section {
+  @include dFlex($flexDirection: column, $alignItems: start);
+  background-color: $Background_2;
+  width: 100%;
+
+  img {
+    object-fit: fill;
+    width: 100%;
+  }
+
+  .content {
+    @extend %content_base;
+    width: 100%;
+    border-bottom: 1px solid $mainColor;
+
+    a {
+      color: $mainColor;
+      @include UPPERCASE();
+      font-weight: 700;
+      line-height: 41px;
+      margin: 0 17px;
+      margin-top: 20px;
+      display: inline-block;
+    }
+  }
+
 
 }
+
+
+
 
 //extends
 %content_base {
