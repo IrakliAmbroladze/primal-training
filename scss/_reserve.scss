@@ -1,0 +1,21 @@
+.reserve {
+  min-height: 425px;
+  background-color: $Background_1;
+  @include dFlex($justifyContent: center, $flexDirection: column);
+  @include UPPERCASE();
+
+  h2 {
+    margin: 18px 0;
+    text-align: center;
+    font-size: 44px;
+    font-weight: 700
+  }
+
+  button {
+    @include UPPERCASE();
+    padding: 12px 17px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+  }
+}
