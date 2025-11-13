@@ -6,6 +6,7 @@ header {
   .header-logo {
     @include dFlex();
     gap: 9px;
+    color: $mainColor;
   }
 
   .burger-menu {
