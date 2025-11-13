@@ -19,3 +19,16 @@
     cursor: pointer;
   }
 }
+
+
+@media (min-width: 768px) {
+  .reserve {
+    min-height: 480px;
+
+    h2 {
+      font-size: 57px;
+    }
+
+  }
+
+}
