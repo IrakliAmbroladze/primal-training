@@ -1,1 +1,9 @@
-main {}
+main {
+  .hero-header {
+    text-transform: uppercase;
+
+    span {
+      color: $headLine_2;
+    }
+  }
+}
