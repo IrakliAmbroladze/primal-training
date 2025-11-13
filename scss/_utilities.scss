@@ -6,7 +6,11 @@ body {
   font-style: normal;
   font-variation-settings:
     "wdth" 100;
+}
 
+.container {
+  margin-left: 20px;
+  margin-right: 20px;
 }
 
 //mixins
@@ -15,4 +19,9 @@ body {
   flex-direction: $flexDirection;
   justify-content: $justifyContent;
   align-items: $alignItems;
+}
+
+@mixin UPPERCASE() {
+  text-transform: uppercase;
+
 }
