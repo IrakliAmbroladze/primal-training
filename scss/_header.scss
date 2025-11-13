@@ -1,7 +1,7 @@
 header {
   height: $mobileHeaderHeight;
   background-color: $Background_2;
-
+  max-width: 100%;
   @include dFlex();
 
   .header-content {
