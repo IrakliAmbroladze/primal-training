@@ -28,8 +28,8 @@ body {
 
 //extends
 %content_base {
-  margin-top: 20px;
-  margin-bottom: 30px;
+  padding-top: 20px;
+  padding-bottom: 20px;
 
   h2 {
     font-weight: 700;
@@ -40,7 +40,6 @@ body {
 
   p {
     line-height: 20px;
-    margin-bottom: 20px;
   }
 
 }
