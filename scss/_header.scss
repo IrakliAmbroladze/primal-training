@@ -1,9 +1,7 @@
 header {
   height: $mobileHeaderHeight;
   background-color: $Background_2;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  @include dFlex(_, _, stretch);
 
   .header-logo {
     display: flex;
