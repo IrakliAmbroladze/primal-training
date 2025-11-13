@@ -1,0 +1,38 @@
+    .community-image {
+      height: 100%;
+      width: 100%;
+    }
+
+    .community-content-list {
+      width: 100%;
+    }
+
+    @media (min-width: 768px) {
+      .community {
+        flex-direction: row;
+        height: 470px;
+        border-top: 1px solid;
+
+        .community-image {
+          flex: 1;
+
+          order: 2;
+
+          img {
+            object-fit: cover;
+            height: 100%;
+            width: 100%;
+          }
+        }
+
+        .community-content-list {
+          flex: 1;
+          @include dFlex($flexDirection: column);
+          height: 100%;
+
+          h2 {
+            font-size: 24px;
+          }
+        }
+      }
+    }
