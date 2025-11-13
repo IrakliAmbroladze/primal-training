@@ -1,0 +1,20 @@
+header {
+  height: $mobileHeaderHeight;
+  background-color: $Background_2;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  .header-logo {
+    display: flex;
+    align-items: center;
+    gap: 9px;
+  }
+
+  .burger-menu {
+    width: 32px;
+    height: 32px;
+    font-size: 32px;
+  }
+
+}
