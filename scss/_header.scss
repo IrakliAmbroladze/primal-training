@@ -1,18 +1,18 @@
 header {
   height: $mobileHeaderHeight;
   background-color: $Background_2;
-  @include dFlex(_, _, stretch);
+  @include dFlex();
 
   .header-logo {
-    display: flex;
-    align-items: center;
+    @include dFlex();
     gap: 9px;
   }
 
   .burger-menu {
+    @include dFlex(row, center);
     width: 32px;
-    height: 32px;
-    font-size: 32px;
+    line-height: 32px;
+    font-size: 50px;
   }
 
 }
