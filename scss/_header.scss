@@ -1,22 +1,27 @@
 header {
   height: $mobileHeaderHeight;
   background-color: $Background_2;
+
   @include dFlex();
 
-  .header-logo {
+  .header-content {
     @include dFlex();
-    gap: 9px;
-    color: $mainColor;
-    line-height: 1.1;
-    font-weight: 700;
-    letter-spacing: -0.05em;
-  }
+    width: 100%;
 
-  .burger-menu {
-    @include dFlex(row, center);
-    width: 32px;
-    line-height: 32px;
-    font-size: 50px;
-  }
+    .header-logo {
+      @include dFlex();
+      gap: 9px;
+      color: $mainColor;
+      line-height: 1.1;
+      font-weight: 700;
+      letter-spacing: -0.05em;
+    }
 
+    .burger-menu {
+      @include dFlex(row, center);
+      width: 32px;
+      line-height: 32px;
+      font-size: 50px;
+    }
+  }
 }
