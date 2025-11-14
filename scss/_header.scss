@@ -19,11 +19,69 @@ header {
       letter-spacing: -0.05em;
     }
 
+    .nav-menu {
+      display: none;
+
+    }
+
     .burger-menu {
       @include dFlex(row, center);
       width: 32px;
       line-height: 32px;
       font-size: 50px;
+      cursor: pointer;
     }
+
+    .menu-ul {
+      position: absolute;
+      top: 100%;
+      left: 0;
+      right: 0;
+      background: #fff;
+      display: none;
+
+      a {
+        line-height: 33px;
+        padding: 20px;
+        display: block;
+        color: $mainColor;
+        font-size: 48px;
+        border-bottom: 1px solid;
+        cursor: pointer
+      }
+    }
+
+    .menu-ul.open-menu {
+      display: block;
+    }
+  }
+}
+
+@media (min-width: 768px) {
+
+  header {
+    .header-content {
+      .nav-menu {
+        display: block;
+
+        ul {
+          @include dFlex();
+          gap: 60px;
+
+          a {
+            color: $mainColor;
+            line-height: 110%;
+          }
+
+          font-size: 15px;
+        }
+      }
+
+      .burger-menu-container {
+        display: none;
+
+      }
+    }
+
   }
 }
