@@ -101,3 +101,17 @@ body {
   }
 
 }
+
+@media (min-width: 1200px) {
+
+  .container {
+    max-width: 1280px;
+    margin: auto;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .header {
+    font-size: 94px;
+  }
+}
