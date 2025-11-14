@@ -34,6 +34,16 @@ header {
       right: 0;
       background: #fff;
       display: none;
+
+      a {
+        line-height: 33px;
+        padding: 20px;
+        display: block;
+        color: $mainColor;
+        font-size: 48px;
+        border-bottom: 1px solid;
+        cursor: pointer
+      }
     }
 
     .menu-ul.open-menu {
