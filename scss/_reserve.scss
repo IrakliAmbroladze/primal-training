@@ -11,23 +11,42 @@
     font-weight: 700
   }
 
-  button {
-    @include UPPERCASE();
-    padding: 12px 17px;
-    border: none;
-    border-radius: 8px;
-    cursor: pointer;
-    background: linear-gradient(93deg, rgba(242, 242, 242, 1) 0%, rgba(128, 141, 253, 1) 100%);
-    transition: all 150ms ease-in-out;
-  }
+  .email-form {
+    @include dFlex($flexDirection: column);
+    margin: 20px;
+    gap: 30px;
 
-  button:hover {
-    transform: scale(1.05);
-    background: linear-gradient(93deg, rgba(128, 141, 253, 1) 0%, rgba(242, 242, 242, 1) 100%);
-  }
+    width: 100%;
+    max-width: 300px;
 
-  button:active {
-    transform: scale(0.95);
+    .email-input {
+      border: none;
+      width: 100%;
+      border-radius: 8px;
+      height: 40px;
+      outline: none;
+    }
+
+    .submit-button {
+      @include UPPERCASE();
+      padding: 12px 17px;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      background: linear-gradient(93deg, rgba(242, 242, 242, 1) 0%, rgba(128, 141, 253, 1) 100%);
+      transition: all 150ms ease-in-out;
+      letter-spacing: 0.3em;
+      font-weight: 700
+    }
+
+    .submit-button:hover {
+      transform: scale(1.05);
+      background: linear-gradient(93deg, rgba(128, 141, 253, 1) 0%, rgba(242, 242, 242, 1) 100%);
+    }
+
+    .submit-button:active {
+      transform: scale(0.95);
+    }
   }
 }
 
