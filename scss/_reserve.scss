@@ -17,6 +17,17 @@
     border: none;
     border-radius: 8px;
     cursor: pointer;
+    background: linear-gradient(93deg, rgba(242, 242, 242, 1) 0%, rgba(128, 141, 253, 1) 100%);
+    transition: all 150ms ease-in-out;
+  }
+
+  button:hover {
+    transform: scale(1.05);
+    background: linear-gradient(93deg, rgba(128, 141, 253, 1) 0%, rgba(242, 242, 242, 1) 100%);
+  }
+
+  button:active {
+    transform: scale(0.95);
   }
 }
 
