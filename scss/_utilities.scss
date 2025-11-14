@@ -104,7 +104,8 @@ body {
 
 @media (min-width: 1200px) {
 
-  .container {
+  .container,
+  .section {
     max-width: 1280px;
     margin: auto;
   }
